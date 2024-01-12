@@ -1,0 +1,26 @@
+.school-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.school-container {
+  display: flex;
+}
+
+.school-content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.school-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.school-dates {
+  flex-shrink: 0;
+}

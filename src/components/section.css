@@ -1,0 +1,28 @@
+@media print {
+  .section-container {
+    page-break-after: initial;
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.section-title-icon {
+  font-size: 10px;
+  color: rgb(164, 120, 232);
+}
+
+.section-title-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 10px;
+}

@@ -1,0 +1,14 @@
+.card-small-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  transition: box-shadow 250ms ease, transform 250ms ease;
+  cursor: pointer;
+}
+
+.card-small-container:hover {
+  transition: box-shadow 250ms ease, transform 250ms ease;
+  box-shadow: 0 2px 5px 0 rgb(164, 120, 232);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,55 @@
+@media only screen and (max-width: 900px) {
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-image {
+    height: 300px;
+    justify-self: center;
+    object-fit: contain;
+  }
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-image {
+  height: 200px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project-sub-title {
+  /* font-size: 14px; */
+  font-weight: 500;
+  margin: 10px 0;
+  color: #444444;
+}
+
+.project-description {
+  font-size: 12px;
+}
+
+.project-tech {
+  display: flex;
+  font-size: 10px;
+}
+
+.project-tech-logo {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}

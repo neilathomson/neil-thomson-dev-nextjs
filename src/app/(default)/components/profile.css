@@ -1,0 +1,39 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  padding: 5px 0;
+}
+
+.profile-sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  color: rgb(164, 120, 232);
+  padding: 5px 0;
+}
+
+.profile-quote {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 20px 20px 0 20px;
+}
+
+.profile-quote-author {
+  font-size: 1rem;
+  font-weight: 300;
+  align-self: end;
+  padding: 0 20px 20px 20px;
+}
