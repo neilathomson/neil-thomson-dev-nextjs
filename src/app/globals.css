@@ -3,28 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background: rgb(237, 240, 245);;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-/*body {*/
-/*  color: rgb(var(--foreground-rgb));*/
-/*  background: linear-gradient(*/
-/*      to bottom,*/
-/*      transparent,*/
-/*      rgb(var(--background-end-rgb))*/
-/*    )*/
-/*    rgb(var(--background-start-rgb));*/
-/*}*/
 
 html {
   font-size: 12px;
@@ -36,7 +16,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.1rem;
-  background-color: rgb(237, 240, 245);
 }
 
 code {
@@ -62,5 +41,11 @@ body:hover {
 }
 
 p {
-  margin: 10px 0;
+  margin: 1rem 0;
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
 }
