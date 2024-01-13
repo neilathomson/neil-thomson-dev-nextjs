@@ -1,20 +1,23 @@
 import React from 'react';
-import About from '@/app/(default)/components/about';
-import Contact from '@/app/(default)/components/contact';
-import Education from '@/app/(default)/components/education';
-import Experience from '@/app/(default)/components/experience';
-import Profile from '@/app/(default)/components/profile';
-import Projects from '@/app/(default)/components/projects';
-import Skills from '@/app/(default)/components/skills';
+import { NextPage } from 'next';
+import About from '@/app/(default)/about';
+import Contact from '@/app/(default)/contact';
+import Education from '@/app/(default)/education';
+import Experience from '@/app/(default)/experience';
+import Profile from '@/app/(default)/profile';
+import Projects from '@/app/(default)/projects';
+import Skills from '@/app/(default)/skills';
 import './page.css';
+import LoginBar from '@/app/(default)/login-bar';
 
-const Home: React.FC = () => (
+const Home: NextPage = () => (
     <>
       <div className="side">
         <Profile />
         <Contact />
       </div>
       <div className="main">
+        <LoginBar />
         <About />
         <Skills />
         <Education />
