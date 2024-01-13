@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar, FaStarHalfStroke, FaRegStar } from 'react-icons/fa6';
-import CardSmall from '@/components/card-small';
-import Section from '@/components/section';
+import CardSmall from '@/components/resume/card-small';
+import Section from '@/components/resume/section';
 import './skills.css';
 
 interface SkillProps {

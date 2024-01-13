@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPencil } from 'react-icons/fa6';
-import Section from '@/components/section';
-import Card from '@/components/card';
+import Section from '@/components/resume/section';
+import Card from '@/components/resume/card';
 import './about.css';
 
 const About: React.FC = () => (

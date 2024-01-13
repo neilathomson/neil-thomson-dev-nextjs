@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRegLightbulb } from 'react-icons/fa6';
-import Card from '@/components/card';
-import Section from '@/components/section';
+import Card from '@/components/resume/card';
+import Section from '@/components/resume/section';
 import './projects.css';
 
 interface ProjectProps {

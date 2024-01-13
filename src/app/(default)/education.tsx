@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGraduationCap } from 'react-icons/fa6';
-import Section from '@/components/section';
-import Details from '@/components/details';
+import Section from '@/components/resume/section';
+import Details from '@/app/(default)/details';
 import './education.css';
 
 const Education: React.FC = () => (

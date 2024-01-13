@@ -32,9 +32,9 @@ const Contact: React.FC = () => (
     <div className="contact-container">
       <ContactItem
         icon={FaEnvelope}
-        title={'Email'}
-        href={'mailto:neil.a.thomson@hotmail.com'}
-        display={'neil.a.thomson@hotmail.com'}
+        title={'Contact'}
+        href={'https://neilthomson.dev/contact'}
+        display={'https://neilthomson.dev/contact'}
       />
       <ContactItem
         icon={FaLink}

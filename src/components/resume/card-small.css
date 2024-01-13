@@ -1,6 +1,6 @@
 .card-small-container {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 5px;
   margin: 5px;
   transition: box-shadow 250ms ease, transform 250ms ease;
