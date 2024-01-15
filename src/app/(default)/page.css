@@ -6,7 +6,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 2rem;
     overflow-y: initial !important;
   }
 
@@ -14,14 +14,14 @@
     position: absolute;
     left: 250px;
     height: 100%;
-    padding: 10px;
+    padding: 2rem 1rem;
     overflow-y: initial !important;
   }
 
-  .page-break {
-    page-break-before: always;
-    margin-top: 25px;
-  }
+  /*.page-break {*/
+  /*  page-break-before: always;*/
+  /*  margin-top: 25px;*/
+  /*}*/
 
   .print-hide {
     display: none !important;
@@ -34,11 +34,11 @@
 
 @media only screen {
   .side {
-    padding: 30px;
+    padding: 2rem;
   }
 
   .main {
-    padding: 30px;
+    padding: 2rem 1rem;
   }
 }
 
@@ -48,39 +48,39 @@
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) and (max-width: 1500px) {
   .side {
     position: fixed;
     height: 100%;
     width: 300px;
     left: calc(50% - 450px);
     flex-direction: column;
-    padding: 30px;
+    padding: 2rem;
   }
 
   .main {
     position: absolute;
     right: calc(50% - 450px);
     width: 600px;
-    padding: 30px;
+    padding: 2rem 1rem;
   }
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+@media only screen and (min-width: 1501px) and (max-width: 2000px) {
   .side {
     position: fixed;
     height: 100%;
     width: 400px;
     left: calc(50% - 600px);
     flex-direction: column;
-    padding: 30px;
+    padding: 2rem;
   }
 
   .main {
     position: absolute;
     right: calc(50% - 600px);
     width: 800px;
-    padding: 30px;
+    padding: 2rem 1rem;
   }
 
   html {
@@ -88,21 +88,21 @@
   }
 }
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 2001px) {
   .side {
     position: fixed;
     height: 100%;
     width: 500px;
     left: calc(50% - 750px);
     flex-direction: column;
-    padding: 30px;
+    padding: 2rem;
   }
 
   .main {
     position: absolute;
     right: calc(50% - 750px);
     width: 1000px;
-    padding: 30px;
+    padding: 2rem 1rem;
   }
 
   html {
@@ -125,20 +125,4 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-}
-
-.replay-button {
-  /* background: none !important; */
-  border: none;
-  /* padding: 0 !important; */
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: rgb(77, 46, 106);
-  text-decoration: none;
-  cursor: pointer;
-  margin: 5px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  padding: 10px;
 }

@@ -1,4 +1,7 @@
 {
+  "env": {
+    "es2020": true
+  },
   "rules": {
     "import/extensions": [
       "error",

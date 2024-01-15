@@ -1,5 +1,3 @@
-.about-container {}
-
-/*.paragraph {*/
-/*  margin: 10px 0;*/
-/*}*/
+.about-container {
+  white-space: pre-line;
+}

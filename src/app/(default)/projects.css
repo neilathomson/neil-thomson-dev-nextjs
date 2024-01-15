@@ -43,6 +43,12 @@
   font-size: 1rem;
 }
 
+.project-tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .project-tech {
   display: flex;
   font-size: 0.9rem;

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Card from '../../components/resume/card';
+import Card from './card';
 import './details.css';
 
 interface DetailsProps {

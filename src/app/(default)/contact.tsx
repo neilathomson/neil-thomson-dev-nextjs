@@ -34,13 +34,13 @@ const Contact: React.FC = () => (
         icon={FaEnvelope}
         title={'Contact'}
         href={'https://neilthomson.dev/contact'}
-        display={'https://neilthomson.dev/contact'}
+        display={'neilthomson.dev/contact'}
       />
       <ContactItem
         icon={FaLink}
         title={'Website'}
         href={'https://neilthomson.dev'}
-        display={'https://neilthomson.dev'}
+        display={'neilthomson.dev'}
       />
       <ContactItem
         icon={FaLinkedinIn}

@@ -5,9 +5,9 @@
 }
 
 .profile-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
 }
 
 .profile-title {

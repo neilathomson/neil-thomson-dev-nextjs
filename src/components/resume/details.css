@@ -1,6 +1,7 @@
 .details-container {
   display: flex;
   flex-direction: column;
+  page-break-inside: avoid;
 }
 
 .details-header {
@@ -37,4 +38,5 @@
 }
 
 .details-content {
+  white-space: pre-line;
 }
