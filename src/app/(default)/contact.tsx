@@ -33,13 +33,13 @@ const Contact: React.FC = () => (
       <ContactItem
         icon={FaEnvelope}
         title={'Contact'}
-        href={'https://neilthomson.dev/contact'}
+        href={`${process.env.SITE_URL}/contact`}
         display={'neilthomson.dev/contact'}
       />
       <ContactItem
         icon={FaLink}
         title={'Website'}
-        href={'https://neilthomson.dev'}
+        href={`${process.env.SITE_URL}`}
         display={'neilthomson.dev'}
       />
       <ContactItem
