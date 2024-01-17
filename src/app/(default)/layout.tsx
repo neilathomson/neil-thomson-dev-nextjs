@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import LoginBar from '@/app/(default)/login-bar';
 
 export default function DefaultLayout({
   children,

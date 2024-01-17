@@ -15,7 +15,7 @@ const About: React.FC = async () => {
         </div>
       </Card>
     </Section>
-  )
+  );
 };
 
 export default About;

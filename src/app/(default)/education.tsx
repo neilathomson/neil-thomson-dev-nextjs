@@ -22,7 +22,7 @@ const Education: React.FC = async () => {
           image={education.image}
           title={education.school}
           subTitle={education.grade}
-          date={durationDisplay(education.from, education.to)}
+          date={durationDisplay(education.from, education.to || undefined)}
         >
           <></>
         </Details>

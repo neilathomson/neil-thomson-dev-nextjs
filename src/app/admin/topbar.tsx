@@ -4,8 +4,7 @@ import {
 } from '@nextui-org/react';
 import Logo from './logo';
 
-const TopBar = () => {
-  return (
+const TopBar = () => (
     <Navbar>
       <NavbarBrand>
         <Logo />
@@ -36,7 +35,6 @@ const TopBar = () => {
         </NavbarItem>
       </NavbarContent>
     </Navbar>
-  );
-};
+);
 
 export default TopBar;

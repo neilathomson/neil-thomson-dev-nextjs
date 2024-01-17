@@ -7,8 +7,7 @@ interface SectionProps {
   children: ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ title, icon: Icon, children }) => {
-  return (
+const Section: React.FC<SectionProps> = ({ title, icon: Icon, children }) => (
     <div className="section-container">
       <div className="section-title">
         <Icon className="section-title-icon" />
@@ -16,7 +15,6 @@ const Section: React.FC<SectionProps> = ({ title, icon: Icon, children }) => {
       </div>
       {children}
     </div>
-  );
-};
+);
 
 export default Section;

@@ -21,9 +21,7 @@ const Home: NextPage = () => (
         <About />
         <Skills />
         <Education />
-        {/*<div className="page-break"></div>*/}
         <Projects />
-        {/*<div className="page-break"></div>*/}
         <Experience />
       </div>
     </>
