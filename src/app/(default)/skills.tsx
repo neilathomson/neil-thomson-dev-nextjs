@@ -11,7 +11,7 @@ interface SkillProps {
   proficiency: number;
 }
 
-const Skill: React.FC<SkillProps> = ({image, proficiency}) => {
+const Skill: React.FC<SkillProps> = ({ image, proficiency }) => {
   const renderStars = () => {
     const roundedProficiency = Math.round(proficiency * 10) / 2;
     const stars = [];
