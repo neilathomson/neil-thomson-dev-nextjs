@@ -11,8 +11,11 @@ datasource db {
 }
 
 model About {
-  id    String @id @default(cuid())
-  about String
+  id      String @id @default(cuid())
+  image   String?
+  name    String
+  tagline String
+  about   String
 }
 
 model SkillGroup {
