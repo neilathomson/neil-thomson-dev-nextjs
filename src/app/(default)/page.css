@@ -1,4 +1,22 @@
-@media print {
+.side {
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 46, 72);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.main {
+  box-sizing: border-box;
+  background-color: rgb(247, 249, 252);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+@media only print {
   .side {
     position: absolute;
     left: 0;
@@ -17,11 +35,6 @@
     overflow-y: initial !important;
   }
 
-  /*.page-break {*/
-  /*  page-break-before: always;*/
-  /*  margin-top: 25px;*/
-  /*}*/
-
   .print-hide {
     display: none !important;
   }
@@ -33,10 +46,13 @@
 
 @media only screen {
   .side {
+    position: fixed;
+    height: 100%;
     padding: 2rem;
   }
 
   .main {
+    position: absolute;
   }
 }
 
@@ -48,16 +64,11 @@
 
 @media only screen and (min-width: 901px) and (max-width: 1500px) {
   .side {
-    position: fixed;
-    height: 100%;
     width: 300px;
     left: calc(50% - 450px);
-    flex-direction: column;
-    padding: 2rem;
   }
 
   .main {
-    position: absolute;
     right: calc(50% - 450px);
     width: 600px;
   }
@@ -65,16 +76,11 @@
 
 @media only screen and (min-width: 1501px) and (max-width: 2000px) {
   .side {
-    position: fixed;
-    height: 100%;
     width: 400px;
     left: calc(50% - 600px);
-    flex-direction: column;
-    padding: 2rem;
   }
 
   .main {
-    position: absolute;
     right: calc(50% - 600px);
     width: 800px;
   }
@@ -86,16 +92,11 @@
 
 @media only screen and (min-width: 2001px) {
   .side {
-    position: fixed;
-    height: 100%;
     width: 500px;
     left: calc(50% - 750px);
-    flex-direction: column;
-    padding: 2rem;
   }
 
   .main {
-    position: absolute;
     right: calc(50% - 750px);
     width: 1000px;
   }
@@ -103,21 +104,4 @@
   html {
     font-size: 16px;
   }
-}
-
-.side {
-  box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
-  color: rgb(46, 46, 72);
-  display: flex;
-  overflow-y: auto;
-  z-index: 10;
-}
-
-.main {
-  box-sizing: border-box;
-  background-color: rgb(247, 249, 252);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
 }
