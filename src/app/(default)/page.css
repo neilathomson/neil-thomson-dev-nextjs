@@ -6,6 +6,7 @@
   flex-direction: column;
   overflow-y: auto;
   z-index: 10;
+  padding: 2rem;
 }
 
 .main {
@@ -44,21 +45,20 @@
   }
 }
 
-@media only screen {
+@media only screen and (max-width: 900px) {
+  .side {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 901px) {
   .side {
     position: fixed;
     height: 100%;
-    padding: 2rem;
   }
 
   .main {
     position: absolute;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .side {
-    flex-direction: column;
   }
 }
 
