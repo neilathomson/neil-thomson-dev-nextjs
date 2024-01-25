@@ -63,11 +63,11 @@ const Skills: React.FC = async () => {
   return (
     <Section icon={FaRegStar} title="Skills">
       {skillGroups.map((skillGroup) => (
-        <>
-          <h3 key={skillGroup.id} className="skill-heading">
+        <section key={skillGroup.id}>
+          <h3 className="skill-heading">
             {skillGroup.title}
           </h3>
-          <div key={skillGroup.id} className="skills">
+          <div className="skills">
             {skillGroup.skills.map((skill) => (
               <Skill
                 key={skill.id}
@@ -77,7 +77,7 @@ const Skills: React.FC = async () => {
               />
             ))}
           </div>
-        </>
+        </section>
       ))}
     </Section>
   );
