@@ -11,7 +11,7 @@ datasource db {
 }
 
 model About {
-  id      String @id @default(cuid())
+  id      String  @id @default(cuid())
   image   String?
   name    String
   tagline String
@@ -33,7 +33,7 @@ model Skill {
   rating      Float
   groupId     String
   group       SkillGroup @relation(fields: [groupId], references: [id])
-  Projects    Project[]
+  projects    Project[]
 }
 
 model Education {
@@ -61,4 +61,12 @@ model Experience {
   from        DateTime
   to          DateTime?
   description String
+}
+
+model Message {
+  id         String   @id @default(cuid())
+  email      String
+  subject    String
+  message    String
+  created_at DateTime @default(now())
 }
