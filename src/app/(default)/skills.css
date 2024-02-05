@@ -20,7 +20,13 @@
 .skill-logo {
   width: 4.75rem;
   height: 4.75rem;
-  margin-bottom: 5px;
+  /*margin-bottom: 3px;*/
+}
+
+.skill-title {
+  line-height: 0.7rem;
+  font-size: 0.7rem;
+  color: #a0a0a0;
 }
 
 @media print {

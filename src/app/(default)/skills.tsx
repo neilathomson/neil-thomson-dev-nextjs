@@ -11,21 +11,21 @@ interface SkillProps {
   proficiency: number;
 }
 
-const Skill: React.FC<SkillProps> = ({ image, proficiency }) => {
-  const renderStars = () => {
-    const roundedProficiency = Math.round(proficiency * 10) / 2;
-    const stars = [];
-    for (let i = 1; i <= 5; i += 1) {
-      if (i <= roundedProficiency) {
-        stars.push(<FaStar key={i} className="skill-star"/>);
-      } else if (i - 0.5 === roundedProficiency) {
-        stars.push(<FaStarHalfStroke key={i} className="skill-star"/>);
-      } else {
-        stars.push(<FaRegStar key={i} className="skill-star"/>);
-      }
-    }
-    return stars;
-  };
+const Skill: React.FC<SkillProps> = ({ image, title }) => {
+  // const renderStars = () => {
+  //   const roundedProficiency = Math.round(proficiency * 10) / 2;
+  //   const stars = [];
+  //   for (let i = 1; i <= 5; i += 1) {
+  //     if (i <= roundedProficiency) {
+  //       stars.push(<FaStar key={i} className="skill-star"/>);
+  //     } else if (i - 0.5 === roundedProficiency) {
+  //       stars.push(<FaStarHalfStroke key={i} className="skill-star"/>);
+  //     } else {
+  //       stars.push(<FaRegStar key={i} className="skill-star"/>);
+  //     }
+  //   }
+  //   return stars;
+  // };
 
   return (
     <CardSmall>
@@ -33,7 +33,8 @@ const Skill: React.FC<SkillProps> = ({ image, proficiency }) => {
         <img className="skill-logo" src={image} alt="Skill"/>
         {/* <span className="skill-title">{title}</span> */}
         <div className="skill-proficiency">
-          <span className="stars">{renderStars()}</span>
+          {/*<span className="stars">{renderStars()}</span>*/}
+          <span className="skill-title">{title}</span>
         </div>
       </div>
     </CardSmall>
